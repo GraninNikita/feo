@@ -779,3 +779,12 @@ ul.social li a {
     filter: alpha(opacity=0);
   }
 }
+#authButtons{
+    color: white;
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    display: block;
+}

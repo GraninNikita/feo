@@ -8,13 +8,7 @@
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
     <title>Информационный сайт г. Феодосия</title>
     <meta name="description" content="">
-    <!--
 
-    Sprint Template
-
-    http://www.templatemo.com/tm-401-sprint
-
-    -->
     <meta name="viewport" content="width=device-width">
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet">
@@ -53,6 +47,16 @@
                         </ul>
                     </div> <!-- /.main-menu -->
                 </div> <!-- /.col-md-8 -->
+                <div class="col-md-8 col-sm-6 col-xs-8 text-right" id="authButtons">
+                    @if(!Auth::check())
+                        <a href="auth/login">Войти</a>
+                        <a href="auth/register">Регистрация</a>
+                    @else
+                        {{ Auth::user()->name}}
+                    <a href="auth/logout">Выйти</a>
+                    @endif
+
+                </div>
             </div> <!-- /.row -->
             <div class="row">
                 <div class="col-md-12">
@@ -119,20 +123,20 @@
             </div>
         </li>
     </ul> <!-- /.bxslider -->
-    <div class="bx-thumbnail-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="bx-pager">
-                        <a data-slide-index="0" href=""><img src="images/slider/thumb1.jpg" alt="image 1" /></a>
-                        <a data-slide-index="1" href=""><img src="images/slider/thumb2.jpg" alt="image 2" /></a>
-                        <a data-slide-index="2" href=""><img src="images/slider/thumb3.jpg" alt="image 3" /></a>
-                        <a data-slide-index="3" href=""><img src="images/slider/thumb4.jpg" alt="image 4" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{--<div class="bx-thumbnail-wrapper">--}}
+        {{--<div class="container">--}}
+            {{--<div class="row">--}}
+                {{--<div class="col-md-12">--}}
+                    {{--<div id="bx-pager">--}}
+                        {{--<a data-slide-index="0" href=""><img src="images/slider/thumb1.jpg" alt="image 1" /></a>--}}
+                        {{--<a data-slide-index="1" href=""><img src="images/slider/thumb2.jpg" alt="image 2" /></a>--}}
+                        {{--<a data-slide-index="2" href=""><img src="images/slider/thumb3.jpg" alt="image 3" /></a>--}}
+                        {{--<a data-slide-index="3" href=""><img src="images/slider/thumb4.jpg" alt="image 4" /></a>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
 </div> <!-- /.site-slider -->
 
 <div id="services" class="content-section">
@@ -394,7 +398,7 @@
                     <li><a href="#" class="fa fa-rss"></a></li>
                 </ul>
             </div> <!-- /.col-md-6 -->
-        </div> <!-- /.row -->
+        </div> <!-- /row -->
     </div> <!-- /.container -->
 </div> <!-- /.site-footer -->
 
