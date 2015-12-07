@@ -39,16 +39,16 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-6">
                     <div id="templatemo_logo">
-                        <h1><a href="#">Sprint</a></h1>
+                        {{--<h1><a href="#">Феодосия</a></h1>--}}
                     </div> <!-- /.logo -->
                 </div> <!-- /.col-md-4 -->
                 <div class="col-md-8 col-sm-6 col-xs-6">
                     <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
                     <div class="main-menu">
                         <ul>
-                            <li><a href="#front">Новости</a></li>
-                            <li><a href="#services">Предприятия</a></li>
-                            <li><a href="#products">Жалобы</a></li>
+                            <li><a href="#news">Новости</a></li>
+                            <li><a href="#products">Предприятия</a></li>
+                            <li><a href="#jek">МУП ЖКХ</a></li>
                             <li><a href="#contact">Контакты</a></li>
                         </ul>
                     </div> <!-- /.main-menu -->
@@ -59,9 +59,9 @@
                     <div class="responsive">
                         <div class="main-menu">
                             <ul>
-                                <li><a href="#front">Новости</a></li>
-                                <li><a href="#services">Предприятия</a></li>
-                                <li><a href="#products">Жалобы</a></li>
+                                <li><a href="#news">Новости</a></li>
+                                <li><a href="#products">Предприятия</a></li>
+                                <li><a href="#jek">МУП ЖКХ</a></li>
                                 <li><a href="#contact">Контакты</a></li>
                             </ul>
                         </div>
@@ -87,44 +87,32 @@
             </div>
         </li>
         <li>
-            <img src="images/slider/slide2.jpg" alt="slider image 2">
+            <img src="images/photos/2.jpg" alt="slider image 2">
             <div class="container caption-wrapper">
                 <div class="slider-caption">
-                    <h2>Using Bootstrap Framework</h2>
+                    <h2>Новости</h2>
                 </div>
             </div>
         </li>
         <li>
-            <img src="images/slider/slide3.jpg" alt="slider image 3">
+            <img src="images/photos/3.jpg" alt="slider image 3">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-right">
                         <div class="slider-caption">
-                            <h2>Mobile Ready Website</h2>
+                            <h2>Объявления</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </li>
         <li>
-            <img src="images/slider/slide4.jpg" alt="slider image 4">
+            <img src="images/photos/4.jpg" alt="slider image 4">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-right">
                         <div class="slider-caption">
-                            <h2>Responsive Layout</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li>
-            <img src="images/slider/slide5.jpg" alt="slider image 5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-right">
-                        <div class="slider-caption">
-                            <h2>Download and use it for free</h2>
+                            <h2>Лучшее</h2>
                         </div>
                     </div>
                 </div>
@@ -140,7 +128,6 @@
                         <a data-slide-index="1" href=""><img src="images/slider/thumb2.jpg" alt="image 2" /></a>
                         <a data-slide-index="2" href=""><img src="images/slider/thumb3.jpg" alt="image 3" /></a>
                         <a data-slide-index="3" href=""><img src="images/slider/thumb4.jpg" alt="image 4" /></a>
-                        <a data-slide-index="4" href=""><img src="images/slider/thumb5.jpg" alt="image 5" /></a>
                     </div>
                 </div>
             </div>
@@ -183,7 +170,7 @@
     {{--</div> <!-- /.container -->--}}
 </div> <!-- /#services -->
 
-<div id="product-promotion" class="content-section">
+<div id="news" class="content-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -326,6 +313,17 @@
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </div> <!-- /#products -->
+<div id="jek" class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="section-title">МУП ЖКХ</h1>
+            </div> <!-- /.col-md-12 -->
+        </div> <!-- /.row -->
+        <div class="row">
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /#product-promotion -->
 
 <div id="contact" class="content-section">
     <div class="container">
