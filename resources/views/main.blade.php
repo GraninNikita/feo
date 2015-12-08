@@ -40,22 +40,23 @@
                     <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
                     <div class="main-menu">
                         <ul>
-                            <li><a href="#news">Тест</a></li>
+                            <li><a href="#news">Новости</a></li>
                             <li><a href="#products">Предприятия</a></li>
                             <li><a href="#jek">МУП ЖКХ</a></li>
+                            <li><a href="#complaints">Отзывы</a></li>
                             <li><a href="#contact">Контакты</a></li>
                         </ul>
                     </div> <!-- /.main-menu -->
                 </div> <!-- /.col-md-8 -->
                 <div class="col-md-8 col-sm-6 col-xs-8 text-right" id="authButtons">
                     @if(!Auth::check())
-                        <a href="auth/login">Войти</a>
+                        <a href="auth/login">Войти/</a>
                         <a href="auth/register">Регистрация</a>
                     @else
                         {{ Auth::user()->name}}
-
+                    <a href="admin" style="color:red;">Админ/</a>
                     <a href="auth/logout">Выйти</a>
-                    <a href="admin" style="color:red;">Админ</a>
+                    
                     @endif
 
                 </div>
@@ -68,6 +69,7 @@
                                 <li><a href="#news">Новости</a></li>
                                 <li><a href="#products">Предприятия</a></li>
                                 <li><a href="#jek">МУП ЖКХ</a></li>
+                                <li><a href="#complaints">Отзывы</a></li>
                                 <li><a href="#contact">Контакты</a></li>
                             </ul>
                         </div>
@@ -86,7 +88,7 @@
                 <div class="row">
                     <div class="col-md-12 text-right">
                         <div class="slider-caption">
-                            <h2>Богом данная</h2>
+                            <h2>Феодосия - «Богом данная».</h2>
                         </div>
                     </div>
                 </div>
@@ -96,7 +98,7 @@
             <img src="images/photos/2.jpg" alt="slider image 2">
             <div class="container caption-wrapper">
                 <div class="slider-caption">
-                    <h2>Новости</h2>
+                    <h2>Основана в VI веке до н. э.</h2>
                 </div>
             </div>
         </li>
@@ -106,7 +108,7 @@
                 <div class="row">
                     <div class="col-md-12 text-right">
                         <div class="slider-caption">
-                            <h2>Объявления</h2>
+                            <h2>Город воинской славы</h2>
                         </div>
                     </div>
                 </div>
@@ -118,7 +120,7 @@
                 <div class="row">
                     <div class="col-md-12 text-right">
                         <div class="slider-caption">
-                            <h2>Лучшее</h2>
+                            <h2>Самый красивый город</h2>
                         </div>
                     </div>
                 </div>
@@ -141,40 +143,44 @@
     {{--</div>--}}
 </div> <!-- /.site-slider -->
 
-<div id="services" class="content-section">
-    {{--<div class="container">--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="service-item">--}}
-                    {{--<span class="service-icon first"></span>--}}
-                    {{--<h3>Easy Customization</h3>--}}
-                    {{--<p>Cras congue orci at diam condimentum, in dignissim tellus elementum. Praesent id mauris eu urna vehicula rutrum sed in elit. Sed sed urna porta, viverra lacus in.</p>--}}
-                {{--</div> <!-- /.service-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="service-item">--}}
-                    {{--<span class="service-icon second"></span>--}}
-                    {{--<h3>Web Design</h3>--}}
-                    {{--<p>Nulla in nunc elit. Etiam porttitor nibh et felis molestie fermentum. Ut quis diam porttitor, dictum dolor in, volutpat nulla. Phasellus egestas eu lacus eu pharetra.</p>--}}
-                {{--</div> <!-- /.service-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="service-item">--}}
-                    {{--<span class="service-icon third"></span>--}}
-                    {{--<h3>High Quality</h3>--}}
-                    {{--<p>Sprint is free responsive website template using HTML5 CSS3 and Bootstrap framework. Feel free to download, edit and use it for your websites.</p>--}}
-                {{--</div> <!-- /.service-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="service-item">--}}
-                    {{--<span class="service-icon fourth"></span>--}}
-                    {{--<h3>Professional Design</h3>--}}
-                    {{--<p>Morbi id nisi enim. Ut congue interdum pharetra facilisi. Aenean consectetur pellentesque mauris nec ornare. Nam tortor justo, rutrum ut condimentum.</p>--}}
-                {{--</div> <!-- /.service-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
-        {{--</div> <!-- /.row -->--}}
-    {{--</div> <!-- /.container -->--}}
-</div> <!-- /#services -->
+
+
+<div id="product-promotion" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="section-title">Добро пожаловать</h1>
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+            <div class="row">
+                <div class="col-md-2 col-sm-3">
+                    <div class="item-small">
+                        <img src="images/promotion/promotion1.jpg" alt="Product 1">
+                        <h4>В любом месте</h4>
+                    </div> <!-- /.item-small -->
+                </div> <!-- /.col-md-2 -->
+                <div class="col-md-8 col-sm-6">
+                    <div class="item-large">
+                        <img src="images/promotion/promotion2.jpg" alt="Product 2">
+                        <div class="item-large-content">
+                            <div class="item-header">
+                                <h2 class="pull-left">Сайт-помощник</h2>
+                           
+                                <div class="clearfix"></div>
+                            </div> <!-- /.item-header -->
+                            <p> Данный веб-сайт предназначен для поиска информации по-существующим учреждениям города Феодосия. Чтобы Вы чувствовали себя в центре событий, сайт содержит самые свежие новости, происходящие в городе. <br><br> Основой для создания веб-сайта города Феодосия являлась возможность горожан оставлять отзывы и предложения по улучшению различных частей города. А так же, возможность оставлять жалобы для контор,предприятий и ЖЭКов,в режиме онлайн, для быстрого реагирования городской власти. Желаем приятного пользования.</p>
+                        </div> <!-- /.item-large-content -->
+                    </div> <!-- /.item-large -->
+                </div> <!-- /.col-md-8 -->
+                <div class="col-md-2 col-sm-3">
+                    <div class="item-small">
+                        <img src="images/promotion/promotion3.jpg" alt="Product 3">
+                        <h4>В любое время</h4>
+                    </div> <!-- /.item-small -->
+                </div> <!-- /.col-md-2 -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /#product-promotion -->
 
 <div id="news" class="content-section">
     <div class="container">
@@ -330,12 +336,52 @@
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </div> <!-- /#product-promotion -->
-
-<div id="contact" class="content-section">
+ <div id="services" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <span class="service-icon first"></span>
+                        <h3>МУП ЖЭК № 1</h3>
+                        <p>Юридический адрес: 298100<BR>г.Феодосия, ул.Галерейная, д.20<br><br><a href="" target="blank">Подробнее...</a></p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <span class="service-icon second"></span>
+                        <h3>МУП ЖЭК № 2</h3>
+                        <p>Юридический адрес: 298100<BR>г.Феодосия,ул. В. Коробкова,13<br><br><a href="" target="blank">Подробнее...</a></p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <span class="service-icon third"></span>
+                        <h3>МУП ЖЭК № 3</h3>
+                        <p>Юридический адрес: 298100<BR>г.Феодосия,ул. Гарнаева,75<br><br><a href="" target="blank">Подробнее...</a></p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+                  <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <span class="service-icon fourth"></span>
+                        <h3>МУП ЖЭК № 4</h3>
+                        <p>Юридический адрес: 298100<BR>г.Феодосия, Симферопольское шоссе, 39а<br><a href="" target="blank">Подробнее...</a></p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <span class="service-icon five"></span>
+                        <h3>МУП ЖЭК № 5</h3>
+                        <p>Юридический адрес: 298112<BR>г.Феодосия, бул.Старшинова, д.14<br><a href="" target="blank">Подробнее...</a></p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /#services -->
+<div id="complaints" class="content-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="section-title">Наши контакты</h1>
+                <h1 class="section-title">Отзывы</h1>
             </div> <!-- /.col-md-12 -->
         </div> <!-- /.row -->
         <div class="row">
@@ -350,6 +396,44 @@
                         {{--src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OAau7AYtMs54Sg4dGUhEsCnihgSqvFeM&width=500&height=400&lang=ru_RU&sourceType=constructor">--}}
                 {{--</script>--}}
             </div> <!-- /.col-md-6 -->
+            <div class="col-md-6 col-sm-6">
+
+                <div class="row contact-form">
+
+                    <fieldset class="col-md-6 col-sm-6">
+                        <input id="name" type="text" name="name" placeholder="ФИО" value="@if(Auth::check()){{Auth::user()->name}}@endif">
+                    </fieldset>
+                    <fieldset class="col-md-6 col-sm-6">
+                        <input type="email" name="email" id="email" placeholder="Email" value="@if(Auth::check()){{Auth::user()->email}}@endif">
+                    </fieldset>
+                    <fieldset class="col-md-12">
+                        <input type="text" name="subject" id="subject" placeholder="Тема сообщения">
+                    </fieldset>
+                    <fieldset class="col-md-12">
+                        <textarea name="comments" id="comments" placeholder="Сообщение"></textarea>
+                    </fieldset>
+                    <fieldset class="col-md-12  col-xs-offset-4 col-sm-offset-4 col-md-offset-4" >
+                            <input type="submit" name="send" value="Отправить отзыв" id="submit" class="button">
+                    </fieldset>
+
+                </div> <!-- /.contact-form -->
+
+            </div> <!-- /.col-md-6 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /#products -->
+
+<div id="contact" class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="section-title">Наши контакты</h1>
+            </div> <!-- /.col-md-12 -->
+        </div> <!-- /.row -->
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 text-center bigger-text">
+            </div>
+            
             <div class="col-md-6 col-sm-6">
 
                 <div class="row contact-form">
