@@ -26,6 +26,19 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
+Route::get('admin', function(){
+    return view('admin/admin');
+});
+
+/*admin routes*/
+
+Route::get('admin/news', function(){
+    return view('admin/news');
+});
+
+Route::get('admin/businesses', function(){
+    return view('admin/businesses');
+});
 
 Route::controllers([
     'password' => 'Auth\PasswordController',

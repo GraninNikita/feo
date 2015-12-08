@@ -788,3 +788,6 @@ ul.social li a {
     border: 0;
     display: block;
 }
+#authButtons a{
+    color: white;
+}

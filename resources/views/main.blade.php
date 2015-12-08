@@ -53,7 +53,9 @@
                         <a href="auth/register">Регистрация</a>
                     @else
                         {{ Auth::user()->name}}
+
                     <a href="auth/logout">Выйти</a>
+                    <a href="admin" style="color:red;">Админ</a>
                     @endif
 
                 </div>
@@ -353,10 +355,10 @@
                 <div class="row contact-form">
 
                     <fieldset class="col-md-6 col-sm-6">
-                        <input id="name" type="text" name="name" placeholder="ФИО">
+                        <input id="name" type="text" name="name" placeholder="ФИО" value="@if(Auth::check()){{Auth::user()->name}}@endif">
                     </fieldset>
                     <fieldset class="col-md-6 col-sm-6">
-                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="email" name="email" id="email" placeholder="Email" value="@if(Auth::check()){{Auth::user()->email}}@endif">
                     </fieldset>
                     <fieldset class="col-md-12">
                         <input type="text" name="subject" id="subject" placeholder="Тема сообщения">
@@ -364,8 +366,8 @@
                     <fieldset class="col-md-12">
                         <textarea name="comments" id="comments" placeholder="Сообщение"></textarea>
                     </fieldset>
-                    <fieldset class="col-md-12">
-                        <input type="submit" name="send" value="Отправить сообщение" id="submit" class="button">
+                    <fieldset class="col-md-12  col-xs-offset-4 col-sm-offset-4 col-md-offset-4" >
+                            <input type="submit" name="send" value="Отправить сообщение" id="submit" class="button">
                     </fieldset>
 
                 </div> <!-- /.contact-form -->
