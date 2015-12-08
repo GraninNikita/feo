@@ -40,7 +40,7 @@
                     <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
                     <div class="main-menu">
                         <ul>
-                            <li><a href="#news">Новости</a></li>
+                            <li><a href="#news">Тест</a></li>
                             <li><a href="#products">Предприятия</a></li>
                             <li><a href="#jek">МУП ЖКХ</a></li>
                             <li><a href="#contact">Контакты</a></li>
