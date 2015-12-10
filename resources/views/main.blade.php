@@ -22,6 +22,7 @@
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
+
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -40,7 +41,7 @@
                     <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
                     <div class="main-menu">
                         <ul>
-                            <li><a href="#news">Тест</a></li>
+                            <li><a href="#news">Новости</a></li>
                             <li><a href="#products">Предприятия</a></li>
                             <li><a href="#jek">МУП ЖКХ</a></li>
                             <li><a href="#contact">Контакты</a></li>
@@ -211,111 +212,48 @@
                     {{--<span>Price: <em class="text-muted">$260.00</em> - <em class="price">$180.00</em></span>--}}
                 {{--</div> <!-- /.product-item -->--}}
             {{--</div> <!-- /.col-md-3 -->--}}
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="product-item">--}}
-                    {{--<div class="item-thumb">--}}
-                        {{--<span class="note"><img src="images/small_logo_3.png" alt=""></span>--}}
-                        {{--<div class="overlay">--}}
-                            {{--<div class="overlay-inner">--}}
-                                {{--<a href="#nogo" class="view-detail">Add to Cart</a>--}}
-                            {{--</div>--}}
-                        {{--</div> <!-- /.overlay -->--}}
-                        {{--<img src="images/products/product2.jpg" alt="">--}}
-                    {{--</div> <!-- /.item-thumb -->--}}
-                    {{--<h3>Donec Vitae Massa</h3>--}}
-                    {{--<span>Price: <em class="text-muted">$320.00</em> - <em class="price">$240.00</em></span>--}}
-                {{--</div> <!-- /.product-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="product-item">--}}
-                    {{--<div class="item-thumb">--}}
-                        {{--<span class="note"><img src="images/small_logo_2.png" alt=""></span>--}}
-                        {{--<div class="overlay">--}}
-                            {{--<div class="overlay-inner">--}}
-                                {{--<a href="#nogo" class="view-detail">Add to Cart</a>--}}
-                            {{--</div>--}}
-                        {{--</div> <!-- /.overlay -->--}}
-                        {{--<img src="images/products/product3.jpg" alt="">--}}
-                    {{--</div> <!-- /.item-thumb -->--}}
-                    {{--<h3>Fusce Dignissim Neque</h3>--}}
-                    {{--<span>Price: <em class="text-muted">$480.00</em> - <em class="price">$340.00</em></span>--}}
-                {{--</div> <!-- /.product-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="product-item">--}}
-                    {{--<div class="item-thumb">--}}
-                        {{--<span class="note"><img src="images/small_logo_1.png" alt=""></span>--}}
-                        {{--<div class="overlay">--}}
-                            {{--<div class="overlay-inner">--}}
-                                {{--<a href="#nogo" class="view-detail">Add to Cart</a>--}}
-                            {{--</div>--}}
-                        {{--</div> <!-- /.overlay -->--}}
-                        {{--<img src="images/products/product4.jpg" alt="">--}}
-                    {{--</div> <!-- /.item-thumb -->--}}
-                    {{--<h3>Mauris Adipiscing Enim</h3>--}}
-                    {{--<span>Price: <em class="text-muted">$260.00</em> - <em class="price">$140.00</em></span>--}}
-                {{--</div> <!-- /.product-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="product-item">--}}
-                    {{--<div class="item-thumb">--}}
-                        {{--<span class="note"><img src="images/small_logo_3.png" alt=""></span>--}}
-                        {{--<div class="overlay">--}}
-                            {{--<div class="overlay-inner">--}}
-                                {{--<a href="#nogo" class="view-detail">Add to Cart</a>--}}
-                            {{--</div>--}}
-                        {{--</div> <!-- /.overlay -->--}}
-                        {{--<img src="images/products/product5.jpg" alt="">--}}
-                    {{--</div> <!-- /.item-thumb -->--}}
-                    {{--<h3>Quisque Tincidunt</h3>--}}
-                    {{--<span>Price: <em class="text-muted">$350.00</em> - <em class="price">$220.00</em></span>--}}
-                {{--</div> <!-- /.product-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="product-item">--}}
-                    {{--<div class="item-thumb">--}}
-                        {{--<span class="note"><img src="images/small_logo_1.png" alt=""></span>--}}
-                        {{--<div class="overlay">--}}
-                            {{--<div class="overlay-inner">--}}
-                                {{--<a href="#nogo" class="view-detail">Add to Cart</a>--}}
-                            {{--</div>--}}
-                        {{--</div> <!-- /.overlay -->--}}
-                        {{--<img src="images/products/product6.jpg" alt="">--}}
-                    {{--</div> <!-- /.item-thumb -->--}}
-                    {{--<h3>Aliquam Malesuada</h3>--}}
-                    {{--<span>Price: <em class="text-muted">$470.00</em> - <em class="price">$330.00</em></span>--}}
-                {{--</div> <!-- /.product-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="product-item">--}}
-                    {{--<div class="item-thumb">--}}
-                        {{--<span class="note"><img src="images/small_logo_2.png" alt=""></span>--}}
-                        {{--<div class="overlay">--}}
-                            {{--<div class="overlay-inner">--}}
-                                {{--<a href="#nogo" class="view-detail">Add to Cart</a>--}}
-                            {{--</div>--}}
-                        {{--</div> <!-- /.overlay -->--}}
-                        {{--<img src="images/products/product7.jpg" alt="">--}}
-                    {{--</div> <!-- /.item-thumb -->--}}
-                    {{--<h3>Sed Eleifend Tortor</h3>--}}
-                    {{--<span>Price: <em class="text-muted">$620.00</em> - <em class="price">$460.00</em></span>--}}
-                {{--</div> <!-- /.product-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="product-item">--}}
-                    {{--<div class="item-thumb">--}}
-                        {{--<span class="note"><img src="images/small_logo_3.png" alt=""></span>--}}
-                        {{--<div class="overlay">--}}
-                            {{--<div class="overlay-inner">--}}
-                                {{--<a href="#nogo" class="view-detail">Add to Cart</a>--}}
-                            {{--</div>--}}
-                        {{--</div> <!-- /.overlay -->--}}
-                        {{--<img src="images/products/product8.jpg" alt="">--}}
-                    {{--</div> <!-- /.item-thumb -->--}}
-                    {{--<h3>Integer tincidunt</h3>--}}
-                    {{--<span>Price: <em class="text-muted">$840.00</em> - <em class="price">$720.00</em></span>--}}
-                {{--</div> <!-- /.product-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
+            @if($news->count())
+                @foreach($news as $item)
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-item">
+                            <div class="item-thumb">
+                                <span class="note">
+                                    <img src="images/small_logo_1.png" alt="">
+                                </span>
+                                <div class="overlay">
+                                    <div class="overlay-inner">
+                                        <a href="#nogo" class="view-detail">Просмотр</a>
+                                    </div>
+                                </div> <!-- /.overlay -->
+                                {{--<p>{{ print_r($item->text) }}</p>--}}
+                                {{--<img src="images/products/product1.jpg" alt="">--}}
+                            {{--<h4><a href='{{link_loc()}}/news/{{ $item->id }}'>{{ $item->title }}</a></h4>--}}
+                            <p class='small'>{{ $item->created_at }}</p>
+                            <p>{!! $item->text !!}</p>
+                            </div> <!-- /.item-thumb -->
+                            <h3>{{$item->header}}</h3>
+                            {{--<span>Price: <em class="text-muted">$260.00</em> - <em class="price">$180.00</em></span>--}}
+                        </div> <!-- /.product-item -->
+                    </div> <!-- /.col-md-3 -->
+
+                @endforeach
+            @endif
+                {{--<div class='row'>--}}
+                    {{--<div class='col-sm-3 hidden-xs'>--}}
+                    {{--</div>--}}
+                    {{--<div class='col-sm-6'>--}}
+                        {{--{!! $news->render() !!}--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--@else--}}
+                {{--<div class='row'>--}}
+                    {{--<div class='col-sm-3 hidden-xs'>--}}
+                    {{--</div>--}}
+                    {{--<div class='col-sm-6'>--}}
+                        {{--<p>{{ trans('user/news.no_news') }}</p>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </div> <!-- /#products -->
