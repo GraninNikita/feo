@@ -15,8 +15,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Админка</a>
-            <a class="navbar-brand" href="/">На главную</a>
+            <a class="navbar-brand" href="#">Администрация</a>
         </div>
     </div>
 </nav>
@@ -28,8 +27,7 @@
                 <li {{ Request::is('admin/news') ? "class=active" : "" }}><a href='/admin/news'>Новости</a></li>
                 <li {{ Request::is('admin/businesses') ? "class=active" : "" }}><a href='/admin/businesses'>Предприятия</a></li>
                 <li {{ Request::is('admin/contacts') ? "class=active" : "" }}><a href='/admin/contacts'>Контакты</a></li>
-                <li {{ Request::is('admin/complaints') ? "class=active" : "" }}><a href='/admin/
-complaints'>Жалобы</a></li>
+                <li {{ Request::is('admin/complaints') ? "class=active" : "" }}><a href='/admin/complaints'>Жалобы</a></li>
             </ul>
         </div>
         {{--<div class="col-sm-9 col-md-2"> @yield('content')</div>--}}

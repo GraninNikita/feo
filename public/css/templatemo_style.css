@@ -349,7 +349,7 @@ h6 {
 }
 .main-menu ul li {
   display: inline-block;
-  width: 150px;
+  width: 145px;
   text-align: center;
   line-height: 102px;
 }
@@ -486,7 +486,7 @@ h6 {
     Services Styling
    ========================================================================== */
 #services {
-  padding-top: 160px;
+  padding-top: 50px;
   margin-top: -60px;
 }
 
@@ -521,13 +521,29 @@ h6 {
 .service-item .service-icon.fourth {
   background-image: url(../images/service-fourth.png);
 }
+.service-item .service-icon.five {
+  background-image: url(../images/service-five.png);
+}
+.service-item .service-icon.one {
+  background-image: url(../images/1.png);
+}
+.service-item .service-icon.two {
+  background-image: url(../images/2.png);
+}
+.service-item .service-icon.three {
+  background-image: url(../images/3.png);
+}
+.service-item .service-icon.four {
+  background-image: url(../images/4.png);
+}
+
 
 /* ==========================================================================
     Promotion Styling
    ========================================================================== */
 .item-small {
   padding: 20px;
-  background-color: #26b864;
+  background-color: #3C3334;
   color: white;
   text-align: center;
 }
@@ -790,4 +806,8 @@ ul.social li a {
 }
 #authButtons a{
     color: white;
+}
+
+.jek{
+  width:20%;
 }
