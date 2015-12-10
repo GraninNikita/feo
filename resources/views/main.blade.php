@@ -47,7 +47,7 @@
                             <li><a href="#news">Новости</a></li>
                             <li><a href="#products">Предприятия</a></li>
                             <li><a href="#jek">МУП ЖКХ</a></li>
-                            <li><a href="#complaints">Отзывы</a></li>
+                            <li><a href="#complaints">Жалобы</a></li>
                             <li><a href="#contact">Контакты</a></li>
                         </ul>
                     </div> <!-- /.main-menu -->
@@ -73,7 +73,7 @@
                                 <li><a href="#news">Новости</a></li>
                                 <li><a href="#products">Предприятия</a></li>
                                 <li><a href="#jek">МУП ЖКХ</a></li>
-                                <li><a href="#complaints">Отзывы</a></li>
+                                <li><a href="#complaints">Жалобы</a></li>
                                 <li><a href="#contact">Контакты</a></li>
                             </ul>
                         </div>
@@ -249,35 +249,35 @@
  <div id="services" class="content-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 jek">
                     <div class="service-item">
                         <span class="service-icon first"></span>
                         <h3>МУП ЖЭК № 1</h3>
                         <p>Юридический адрес: 298100<BR>г.Феодосия, ул.Галерейная, д.20<br><br><a href="" target="blank">Подробнее...</a></p>
                     </div> <!-- /.service-item -->
                 </div> <!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 jek">
                     <div class="service-item">
                         <span class="service-icon second"></span>
                         <h3>МУП ЖЭК № 2</h3>
                         <p>Юридический адрес: 298100<BR>г.Феодосия,ул. В. Коробкова,13<br><br><a href="" target="blank">Подробнее...</a></p>
                     </div> <!-- /.service-item -->
                 </div> <!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 jek">
                     <div class="service-item">
                         <span class="service-icon third"></span>
                         <h3>МУП ЖЭК № 3</h3>
                         <p>Юридический адрес: 298100<BR>г.Феодосия,ул. Гарнаева,75<br><br><a href="" target="blank">Подробнее...</a></p>
                     </div> <!-- /.service-item -->
                 </div> <!-- /.col-md-3 -->
-                  <div class="col-md-3 col-sm-6">
+                  <div class="col-md-3 col-sm-6 jek">
                     <div class="service-item">
                         <span class="service-icon fourth"></span>
                         <h3>МУП ЖЭК № 4</h3>
                         <p>Юридический адрес: 298100<BR>г.Феодосия, Симферопольское шоссе, 39а<br><a href="" target="blank">Подробнее...</a></p>
                     </div> <!-- /.service-item -->
                 </div> <!-- /.col-md-3 -->
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 jek">
                     <div class="service-item">
                         <span class="service-icon five"></span>
                         <h3>МУП ЖЭК № 5</h3>
@@ -291,7 +291,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="section-title">Отзывы</h1>
+                <h1 class="section-title">Жалобы и предложения</h1>
             </div> <!-- /.col-md-12 -->
         </div> <!-- /.row -->
         <div class="row">
@@ -323,7 +323,7 @@
                         <textarea name="comments" id="comments" placeholder="Сообщение"></textarea>
                     </fieldset>
                     <fieldset class="col-md-12  col-xs-offset-4 col-sm-offset-4 col-md-offset-4" >
-                            <input type="submit" name="send" value="Отправить отзыв" id="submit" class="button">
+                            <input type="submit" name="send" value="Отправить" id="submit" class="button">
                     </fieldset>
 
                 </div> <!-- /.contact-form -->
@@ -337,33 +337,51 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="section-title">Наши контакты</h1>
+                <h1 class="section-title">контакты</h1>
             </div> <!-- /.col-md-12 -->
         </div> <!-- /.row -->
         <div class="row">
             <div class="col-md-offset-2 col-md-8 text-center bigger-text">
             </div>
             
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-11 col-sm-6">
 
-                <div class="row contact-form">
-
-                    <fieldset class="col-md-6 col-sm-6">
-                        <input id="name" type="text" name="name" placeholder="ФИО" value="@if(Auth::check()){{Auth::user()->name}}@endif">
-                    </fieldset>
-                    <fieldset class="col-md-6 col-sm-6">
-                        <input type="email" name="email" id="email" placeholder="Email" value="@if(Auth::check()){{Auth::user()->email}}@endif">
-                    </fieldset>
-                    <fieldset class="col-md-12">
-                        <input type="text" name="subject" id="subject" placeholder="Тема сообщения">
-                    </fieldset>
-                    <fieldset class="col-md-12">
-                        <textarea name="comments" id="comments" placeholder="Сообщение"></textarea>
-                    </fieldset>
-                    <fieldset class="col-md-12  col-xs-offset-4 col-sm-offset-4 col-md-offset-4" >
-                            <input type="submit" name="send" value="Отправить сообщение" id="submit" class="button">
-                    </fieldset>
-                </div> <!-- /.contact-form -->
+         <div id="services" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="service-item">
+                    <span class="service-icon one"></span>
+                        <span class="col-md-3"></span>
+                        <h3>Местоположение</h3>
+                        <p>г.Севастополь<BR>ул.Университетская,26</p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3">
+                    <div class="service-item">
+                    <span class="service-icon two"></span>
+                        <h3>Номер телефона</h3>
+                        <p>+7 (978)-78-650-80<BR>+7 (978)-74-764-95</p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3">
+                    <div class="service-item">
+                    <span class="service-icon three"></span>
+                        <h3>E-mail</h3>
+                        <p>chris.ledeneva@gmail.com<BR>ya.cpec@gmail.com</p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+                  <div class="col-md-3">
+                    <div class="service-item">
+                    <span class="service-icon four"></span>
+                        <h3>Режим работы</h3>
+                        <p>Круглосуточно</p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+                
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /#services -->
 
             </div> <!-- /.col-md-6 -->
         </div> <!-- /.row -->
@@ -376,7 +394,7 @@
         <div class="row">
             <div class="col-md-8 col-sm-6">
                     <span>
-                    	Copyright &copy; 2015 <a href="#">Granin N.A.</a>
+                    	Copyright &copy; 2015 <a href="#">Granin N.A. & Ledeneva C.A.</a>
 
 
                         <!--
