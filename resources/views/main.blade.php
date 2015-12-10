@@ -427,7 +427,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="section-title">Наши контакты</h1>
+                <h1 class="section-title">контакты</h1>
             </div> <!-- /.col-md-12 -->
         </div> <!-- /.row -->
         <div class="row">
@@ -483,7 +483,7 @@
         <div class="row">
             <div class="col-md-8 col-sm-6">
                     <span>
-                    	Copyright &copy; 2015 <a href="#">Granin N.A.</a>
+                    	Copyright &copy; 2015 <a href="#">Granin N.A. & Ledeneva C.A.</a>
 
 
                         <!--
