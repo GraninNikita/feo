@@ -11,12 +11,16 @@
 |
 */
 
-Route::get('/', function() {
-    return view('main');
-});
+Route::get('/', 'User\UserController@index');
 Route::get('/home', function() {
     return view('main');
 });
+
+// news routes
+Route::get('/news/{id}', 'User\UserController@detail_news')->name('news/detail');
+
+
+
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
@@ -26,15 +30,12 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
-Route::get('admin', function(){
-    return view('admin/admin');
-});
+Route::get('admin', 'Admin\AdminController@index');
+Route::get('admin/news', 'Admin\AdminController@news');
+Route::post('admin/news', 'Admin\AdminController@news');
 
 /*admin routes*/
 
-Route::get('admin/news', function(){
-    return view('admin/news');
-});
 
 Route::get('admin/businesses', function(){
     return view('admin/businesses');

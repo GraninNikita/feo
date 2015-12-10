@@ -10,8 +10,11 @@
 			pagerCustom: '#bx-pager',
 			mode: 'fade',
 			nextText: '',
-			prevText: ''
-		});
+			prevText: '',
+            auto: true,
+            options: 'fade',
+            speed: 1000
+        });
 	}
 
 	mainSlider();

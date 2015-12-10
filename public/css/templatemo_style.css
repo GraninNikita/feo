@@ -808,6 +808,13 @@ ul.social li a {
     color: white;
 }
 
+.detail_news {
+    max-width: 800px;
+    margin: 0 auto;
+    /*margin-left: 10%;*/
+    overflow: hidden;
+}
+
 .jek{
   width:20%;
 }

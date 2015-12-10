@@ -16,6 +16,8 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">Администрация</a>
+
+            <a class="navbar-brand" href="/">На главную</a>
         </div>
     </div>
 </nav>
