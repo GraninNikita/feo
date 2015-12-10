@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/templatemo_style.css">
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
 </head>
@@ -197,7 +198,7 @@
         <div class="row">
             @if($news->count())
                 @foreach($news as $item)
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-2 col-sm-6">
                         <div class="product-item">
                             <div class="item-thumb">
                                 <span class="note">
@@ -341,10 +342,8 @@
             </div> <!-- /.col-md-12 -->
         </div> <!-- /.row -->
         <div class="row">
-            <div class="col-md-offset-2 col-md-8 text-center bigger-text">
-            </div>
             
-            <div class="col-md-11 col-sm-6">
+            <div class="col-md-12 col-sm-6">
 
          <div id="services" class="content-section">
         <div class="container">
@@ -367,6 +366,7 @@
                 <div class="col-md-3">
                     <div class="service-item">
                     <span class="service-icon three"></span>
+                        <i class="fa fa-pencil fa-3x"></i>
                         <h3>E-mail</h3>
                         <p>chris.ledeneva@gmail.com<BR>ya.cpec@gmail.com</p>
                     </div> <!-- /.service-item -->

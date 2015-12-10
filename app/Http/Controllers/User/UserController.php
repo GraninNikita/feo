@@ -11,7 +11,7 @@ use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class UserController extends Controller {
-    public $paginateNews = 5;
+    public $paginateNews = 6;
 
     public function index()
     {
