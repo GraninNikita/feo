@@ -43,7 +43,7 @@
                             <li><a href="#news">Новости</a></li>
                             <li><a href="#products">Предприятия</a></li>
                             <li><a href="#jek">МУП ЖКХ</a></li>
-                            <li><a href="#complaints">Отзывы</a></li>
+                            <li><a href="#complaints">Жалобы</a></li>
                             <li><a href="#contact">Контакты</a></li>
                         </ul>
                     </div> <!-- /.main-menu -->
@@ -69,7 +69,7 @@
                                 <li><a href="#news">Новости</a></li>
                                 <li><a href="#products">Предприятия</a></li>
                                 <li><a href="#jek">МУП ЖКХ</a></li>
-                                <li><a href="#complaints">Отзывы</a></li>
+                                <li><a href="#complaints">Жалобы</a></li>
                                 <li><a href="#contact">Контакты</a></li>
                             </ul>
                         </div>
@@ -381,7 +381,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="section-title">Отзывы</h1>
+                <h1 class="section-title">Жалобы и предложения</h1>
             </div> <!-- /.col-md-12 -->
         </div> <!-- /.row -->
         <div class="row">
@@ -413,7 +413,7 @@
                         <textarea name="comments" id="comments" placeholder="Сообщение"></textarea>
                     </fieldset>
                     <fieldset class="col-md-12  col-xs-offset-4 col-sm-offset-4 col-md-offset-4" >
-                            <input type="submit" name="send" value="Отправить отзыв" id="submit" class="button">
+                            <input type="submit" name="send" value="Отправить" id="submit" class="button">
                     </fieldset>
 
                 </div> <!-- /.contact-form -->
