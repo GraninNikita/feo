@@ -3,6 +3,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\User;
+use Image;
 use App\News;
 use Validator;
 use App\Table;
@@ -11,6 +12,7 @@ use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AdminController extends Controller {
+
 
     /**
      * Show the profile for the given user.
@@ -31,10 +33,21 @@ class AdminController extends Controller {
     {
         if ( $request->isMethod('POST') ) {
 //            News::create($request->except('_token'));
+            // read image from temporary file
+            $file = $request->file('imagePrev');
+            $img = Image::make($file->getRealPath());
+
+            $nameFile = $file->getClientOriginalName();
+
+//          resize image
+                    $img->fit(263, 263);
+            // save image
+                    $img->save("images/".$nameFile);
             News::create(
                 [
                     'text' => $request->input('editor1'),
-                    'header' => $request->input('header')
+                    'header' => $request->input('header'),
+                    'picture' => "images/".$nameFile
                 ]
             );
 //            switch ( $request->input('type') ) {
@@ -55,7 +68,7 @@ class AdminController extends Controller {
                 $item->delete();
             }
         }
-        $news = News::orderBy('created_at', 'DESC')->paginate(10);
+        $news = News::orderBy('created_at', 'DESC')->paginate(15);
         return view('admin/news', [ 'news' => $news ]);
     }
 }

@@ -15,6 +15,12 @@ Route::get('/', 'User\UserController@index');
 Route::get('/home', function() {
     return view('main');
 });
+
+// news routes
+Route::get('/news/{id}', 'User\UserController@detail_news')->name('news/detail');
+
+
+
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');

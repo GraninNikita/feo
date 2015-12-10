@@ -4,41 +4,13 @@
 <script src="js/javascript.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
-{{--<script>--}}
-    {{--function imageHandler(e2)--}}
-    {{--{--}}
-        {{--var store = document.getElementById('imgstore');--}}
-        {{--store.innerHTML='<img src="' + e2.target.result +'">';--}}
-    {{--}--}}
-
-    {{--function loadimage(e1)--}}
-    {{--{--}}
-        {{--var filename = e1.target.files[0];--}}
-        {{--var fr = new FileReader();--}}
-        {{--fr.onload = imageHandler;--}}
-        {{--fr.readAsDataURL(filename);--}}
-    {{--}--}}
-
-    {{--window.onload=function()--}}
-    {{--{--}}
-        {{--var x = document.getElementById("filebrowsed");--}}
-        {{--x.addEventListener('change', readfile, false);--}}
-        {{--var y = document.getElementById("getimage");--}}
-        {{--y.addEventListener('change', loadimage, false);--}}
-    {{--}--}}
-{{--</script>--}}
-<!-- /TinyMCE -->
 @extends('admin.admin')
 @section('content')
     <h3>Добавление новости</h3>
-<form action="news" method="post" enctype="application/x-www-form-urlencoded">
+<form action="news" method="post" enctype="multipart/form-data">
     <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
-
-    <input type="file" id="getimage">
-
-    <fieldset><legend>Your image here</legend>
-        <div  id="imgstore"></div>
-    </fieldset>
+    <p>Выберите картинку на главной</p>
+    <input type="file" id="imagePrev" name="imagePrev">
 
     <script>
         function readerHandler(e2)

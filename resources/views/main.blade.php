@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -33,9 +34,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="/">
                     <div id="templatemo_logo">
                         {{--<h1><a href="#">Феодосия</a></h1>--}}
                     </div> <!-- /.logo -->
+                    </a>
                 </div> <!-- /.col-md-4 -->
                 <div class="col-md-8 col-sm-6 col-xs-6">
                     <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
@@ -145,7 +148,8 @@
 </div> <!-- /.site-slider -->
 
 
-
+@yield('maintemplate')
+{{--@section('maintemplate')--}}
 <div id="product-promotion" class="content-section">
         <div class="container">
             <div class="row">
@@ -191,6 +195,33 @@
             </div> <!-- /.col-md-12 -->
         </div> <!-- /.row -->
         <div class="row">
+            @if($news->count())
+                @foreach($news as $item)
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-item">
+                            <div class="item-thumb">
+                                <span class="note">
+                                    {{--<img src="images/small_logo_1.png" alt="">--}}
+                                </span>
+                                <div class="overlay">
+                                    <div class="overlay-inner">
+                                        <a href="news/{{$item->id}}" class="view-detail">Просмотр</a>
+                                    </div>
+                                </div> <!-- /.overlay -->
+                                <img src="{{$item->picture}}" alt="">
+                                <p class='small text-center'>{{ $item->created_at }}</p>
+                                {{--<p>{!! $item->text !!}</p>--}}
+                            </div> <!-- /.item-thumb -->
+                            <h3 class="text-center">{{$item->header}}</h3>
+                        </div> <!-- /.product-item -->
+                    </div> <!-- /.col-md-3 -->
+
+                @endforeach
+
+                @else
+                {{--<h1>Новстей пока нет</h1>--}}
+            @endif
+
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </div> <!-- /#product-promotion -->
@@ -201,65 +232,6 @@
             <div class="col-md-12 text-center">
                 <h1 class="section-title">Предприятия</h1>
             </div> <!-- /.col-md-12 -->
-        </div> <!-- /.row -->
-        <div class="row">
-            {{--<div class="col-md-3 col-sm-6">--}}
-                {{--<div class="product-item">--}}
-                    {{--<div class="item-thumb">--}}
-                        {{--<span class="note"><img src="images/small_logo_1.png" alt=""></span>--}}
-                        {{--<div class="overlay">--}}
-                            {{--<div class="overlay-inner">--}}
-                                {{--<a href="#nogo" class="view-detail">Add to Cart</a>--}}
-                            {{--</div>--}}
-                        {{--</div> <!-- /.overlay -->--}}
-                        {{--<img src="images/products/product1.jpg" alt="">--}}
-                    {{--</div> <!-- /.item-thumb -->--}}
-                    {{--<h3>Nunc Consectetur</h3>--}}
-                    {{--<span>Price: <em class="text-muted">$260.00</em> - <em class="price">$180.00</em></span>--}}
-                {{--</div> <!-- /.product-item -->--}}
-            {{--</div> <!-- /.col-md-3 -->--}}
-            @if($news->count())
-                @foreach($news as $item)
-                    <div class="col-md-3 col-sm-6">
-                        <div class="product-item">
-                            <div class="item-thumb">
-                                <span class="note">
-                                    <img src="images/small_logo_1.png" alt="">
-                                </span>
-                                <div class="overlay">
-                                    <div class="overlay-inner">
-                                        <a href="#nogo" class="view-detail">Просмотр</a>
-                                    </div>
-                                </div> <!-- /.overlay -->
-                                {{--<p>{{ print_r($item->text) }}</p>--}}
-                                {{--<img src="images/products/product1.jpg" alt="">--}}
-                            {{--<h4><a href='{{link_loc()}}/news/{{ $item->id }}'>{{ $item->title }}</a></h4>--}}
-                            <p class='small'>{{ $item->created_at }}</p>
-                            <p>{!! $item->text !!}</p>
-                            </div> <!-- /.item-thumb -->
-                            <h3>{{$item->header}}</h3>
-                            {{--<span>Price: <em class="text-muted">$260.00</em> - <em class="price">$180.00</em></span>--}}
-                        </div> <!-- /.product-item -->
-                    </div> <!-- /.col-md-3 -->
-
-                @endforeach
-            @endif
-                {{--<div class='row'>--}}
-                    {{--<div class='col-sm-3 hidden-xs'>--}}
-                    {{--</div>--}}
-                    {{--<div class='col-sm-6'>--}}
-                        {{--{!! $news->render() !!}--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--@else--}}
-                {{--<div class='row'>--}}
-                    {{--<div class='col-sm-3 hidden-xs'>--}}
-                    {{--</div>--}}
-                    {{--<div class='col-sm-6'>--}}
-                        {{--<p>{{ trans('user/news.no_news') }}</p>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </div> <!-- /#products -->
@@ -391,7 +363,6 @@
                     <fieldset class="col-md-12  col-xs-offset-4 col-sm-offset-4 col-md-offset-4" >
                             <input type="submit" name="send" value="Отправить сообщение" id="submit" class="button">
                     </fieldset>
-
                 </div> <!-- /.contact-form -->
 
             </div> <!-- /.col-md-6 -->
@@ -399,6 +370,7 @@
     </div> <!-- /.container -->
 </div> <!-- /#products -->
 
+{{--@endsection--}}
 <div class="site-footer">
     <div class="container">
         <div class="row">
