@@ -524,6 +524,19 @@ h6 {
 .service-item .service-icon.five {
   background-image: url(../images/service-five.png);
 }
+.service-item .service-icon.one {
+  background-image: url(../images/1.png);
+}
+.service-item .service-icon.two {
+  background-image: url(../images/2.png);
+}
+.service-item .service-icon.three {
+  background-image: url(../images/3.png);
+}
+.service-item .service-icon.four {
+  background-image: url(../images/4.png);
+}
+
 
 /* ==========================================================================
     Promotion Styling
@@ -793,4 +806,8 @@ ul.social li a {
 }
 #authButtons a{
     color: white;
+}
+
+.jek{
+  width:20%;
 }
